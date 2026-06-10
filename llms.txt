@@ -18,6 +18,6 @@ Key facts:
 
 ## Company
 - [About](https://www.insightfuleye.com/about.html): Founder story — the photography studio that became an AI marketing agency.
-- [Case Studies](https://www.insightfuleye.com/case-studies.html): Client Zero (self-audit), Custom Crafted CC (Year-1 build), Swad Restaurant (AI search retainer, East Providence RI).
+- [Case Studies](https://www.insightfuleye.com/case-studies.html): Client Zero (self-audit), Dog Gone Spoiled (Riverside RI dog groomer — website built from zero, now recommended by AI engines), Fisher's Fruit & Christmas Tree Farm (Brockport NY — 100/100 Lighthouse SEO build with analytics and A/B-tested B2B outreach), Custom Crafted CC (Year-1 build).
 - [Blog](https://www.insightfuleye.com/blog/): Field notes on local SEO and AI search, including the Client Zero series.
 - [Contact / Free Authority Audit](https://www.insightfuleye.com/contact.html)
