@@ -109,6 +109,43 @@ header { background: var(--bg); position: sticky; top: 0; z-index: 50; border-bo
 .hero .lede { margin-bottom: 38px; }
 .cta-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
 
+/* ---------- hero report card (Lighthouse gauges) ---------- */
+.hero-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 64px; align-items: center; }
+.report-card {
+  background: var(--panel); border: 1px solid var(--line-gold);
+  padding: 34px 36px 30px;
+}
+.report-head {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 14px;
+}
+.report-domain {
+  font-family: var(--serif); font-size: 1.5rem; font-weight: 600; color: var(--cream);
+  border-bottom: 1px solid var(--line); padding-bottom: 18px; margin-bottom: 26px;
+}
+.gauges { display: flex; gap: 26px; justify-content: space-between; }
+.gauge { text-align: center; flex: 1; }
+.gauge svg { width: 84px; height: 84px; max-width: 100%; transform: rotate(-90deg); }
+.gauge .track { fill: none; stroke: var(--line); stroke-width: 5; }
+.gauge .arc { fill: none; stroke: var(--gold); stroke-width: 5; stroke-linecap: round; }
+.gauge text {
+  transform: rotate(90deg); transform-origin: 40px 40px;
+  font-family: var(--serif); font-size: 22px; font-weight: 600;
+  fill: var(--cream); text-anchor: middle;
+}
+.gauge span {
+  display: block; margin-top: 10px;
+  font-family: var(--mono); font-size: 9px; font-weight: 500;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted);
+}
+.report-foot {
+  border-top: 1px solid var(--line); margin-top: 26px; padding-top: 18px;
+  font-size: 0.86rem; color: var(--muted); line-height: 1.7;
+}
+.report-foot strong { color: var(--cream); font-weight: 600; }
+.report-foot a { color: var(--gold); }
+
 /* ---------- buttons ---------- */
 .btn {
   display: inline-block; text-decoration: none;
@@ -280,6 +317,8 @@ footer .legal {
 @media (max-width: 860px) {
   section { padding: 64px 0; }
   .hero { padding: 72px 0 60px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+  .gauges { gap: 12px; }
   .row { grid-template-columns: 48px 1fr; }
   .row p { grid-column: 2; }
   .row .go { grid-column: 2; }
