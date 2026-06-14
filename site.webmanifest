@@ -1,0 +1,22 @@
+{
+  "name": "Insightful Eye Marketing",
+  "short_name": "Insightful Eye",
+  "description": "Competitive market analysis and AI marketing systems for local businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070a0c",
+  "theme_color": "#c9a227",
+  "icons": [
+    {
+      "src": "/assets/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
