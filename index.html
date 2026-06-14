@@ -59,14 +59,17 @@
   }
   </script>
 </head>
-<body>
-<header>
-  <nav class="nav" aria-label="Main">
+<body class="home-page">
+<header class="site-header">
+  <nav class="nav home-nav" aria-label="Main">
     <a class="logo" href="/">
       <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 9C5.5 3 10 1 15 1s9.5 2 14 8c-4.5 6-9 8-14 8S5.5 15 1 9Z" stroke="#c9a227" stroke-width="1.4"/><circle cx="15" cy="9" r="3.4" fill="#c9a227"/></svg>
       <span>Insightful Eye</span>
     </a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="home-nav-actions">
+      <a class="home-audit-link" href="contact.html">Audit</a>
+      <button class="home-menu-button" type="button" aria-expanded="false" aria-controls="home-menu" data-menu-toggle>Menu</button>
+    </div>
     <ul class="nav-links">
       <li><a href="local-seo.html">Local SEO</a></li>
       <li><a href="ai-voice-agents.html">AI Voice</a></li>
@@ -79,53 +82,130 @@
   </nav>
 </header>
 
+<aside class="home-menu" id="home-menu" aria-hidden="true">
+  <div class="home-menu-panel" role="dialog" aria-modal="true" aria-label="Homepage menu">
+    <div class="home-menu-top">
+      <span>Explore</span>
+      <button type="button" data-menu-close>Close</button>
+    </div>
+    <nav aria-label="Homepage overlay">
+      <a href="local-seo.html">Local SEO</a>
+      <a href="ai-voice-agents.html">AI Voice Agents</a>
+      <a href="marketing-systems.html">Marketing Systems</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="blog/">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Free Audit</a>
+    </nav>
+    <div class="home-menu-meta">
+      <a href="tel:+18573103604">(857) 310-3604</a>
+      <a href="mailto:kbt328@gmail.com">kbt328@gmail.com</a>
+      <span>Rhode Island · Boston · Cape Cod</span>
+    </div>
+  </div>
+</aside>
+
 <main>
-  <section class="hero">
-    <div class="wrap hero-grid">
+  <section class="home-stage" aria-label="Insightful Eye interactive homepage">
+    <div class="home-loader" data-loader>
       <div>
-        <p class="micro">AI Marketing Agency · Rhode Island</p>
+        <span class="loader-percent" data-loader-percent>0%</span>
+        <p>Loading visibility system</p>
+      </div>
+      <button type="button" data-loader-close>Ready to Explore</button>
+    </div>
+
+    <div class="stage-scene" aria-hidden="true">
+      <span class="scene-grid"></span>
+      <span class="scene-orbit orbit-one"></span>
+      <span class="scene-orbit orbit-two"></span>
+      <span class="scene-pulse"></span>
+      <span class="scene-core">
+        <svg viewBox="0 0 160 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 48C31 18 54 8 80 8s49 10 70 40c-21 30-44 40-70 40S31 78 10 48Z" stroke="currentColor" stroke-width="4"/>
+          <circle cx="80" cy="48" r="16" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="scene-node node-a"></span>
+      <span class="scene-node node-b"></span>
+      <span class="scene-node node-c"></span>
+    </div>
+
+    <nav class="stage-rail" aria-label="Visibility stages">
+      <button class="active" type="button" data-slide="0"><span>01</span>Visibility</button>
+      <button type="button" data-slide="1"><span>02</span>Voice</button>
+      <button type="button" data-slide="2"><span>03</span>Authority</button>
+      <button type="button" data-slide="3"><span>04</span>Systems</button>
+      <button type="button" data-slide="4"><span>05</span>Proof</button>
+    </nav>
+
+    <div class="stage-copy" aria-live="polite">
+      <article class="active" data-panel>
+        <p class="stage-kicker">AI Marketing Agency · Rhode Island</p>
         <h1>Seen by Google. <em>Cited by ChatGPT.</em> Booked by phone.</h1>
-        <p class="lede">Insightful Eye Marketing is an AI marketing agency in Rhode Island. We make local businesses visible where customers actually look — Google Search, Google Maps, and the AI engines that now answer "who's the best near me." Local SEO, AI voice agents that answer your phone, and done-for-you marketing systems. Built in Providence's backyard, proven in public.</p>
+        <p>Insightful Eye makes local businesses visible where customers actually look: Google Search, Google Maps, AI answers, and the phone call that decides who gets hired.</p>
         <div class="cta-row">
           <a class="btn btn-gold" href="contact.html">Get the Free Authority Audit</a>
-          <a class="btn btn-ghost" href="tel:+16178124881">Call Iris — Our AI · (617) 812-4881</a>
+          <a class="btn btn-ghost" href="tel:+16178124881">Call Iris · (617) 812-4881</a>
         </div>
-      </div>
-      <aside class="report-card" aria-label="Live client Lighthouse report">
-        <p class="report-head">✦ Live Client Report · Lighthouse</p>
-        <p class="report-domain">fishersfruit.com</p>
-        <div class="gauges">
-          <div class="gauge">
-            <svg viewBox="0 0 80 80" aria-hidden="true">
-              <circle class="track" cx="40" cy="40" r="34"/>
-              <circle class="arc" cx="40" cy="40" r="34" stroke-dasharray="213.6 213.6"/>
-              <text x="40" y="47">100</text>
-            </svg>
-            <span>SEO</span>
-          </div>
-          <div class="gauge">
-            <svg viewBox="0 0 80 80" aria-hidden="true">
-              <circle class="track" cx="40" cy="40" r="34"/>
-              <circle class="arc" cx="40" cy="40" r="34" stroke-dasharray="209.3 213.6"/>
-              <text x="40" y="47">98</text>
-            </svg>
-            <span>Access­ibility</span>
-          </div>
-          <div class="gauge">
-            <svg viewBox="0 0 80 80" aria-hidden="true">
-              <circle class="track" cx="40" cy="40" r="34"/>
-              <circle class="arc" cx="40" cy="40" r="34" stroke-dasharray="205.1 213.6"/>
-              <text x="40" y="47">96</text>
-            </svg>
-            <span>Best Practices</span>
-          </div>
+      </article>
+      <article data-panel>
+        <p class="stage-kicker">AI Voice Agents</p>
+        <h2>Every missed call becomes a captured lead.</h2>
+        <p>Iris answers instantly, qualifies the customer, books the next step, and routes the details back to your team without making people wait for a callback.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="ai-voice-agents.html">Hear the Voice System</a>
+          <a class="btn btn-ghost" href="tel:+16178124881">Call the Live Demo</a>
         </div>
-        <p class="report-foot">doggonespoiled.com scores <strong>100 SEO</strong> too.<br>Every build we ship is held to this number — <a href="case-studies.html">see the work</a>.</p>
-      </aside>
+      </article>
+      <article data-panel>
+        <p class="stage-kicker">Local SEO &amp; AI Search</p>
+        <h2>Turn proof into map-pack and AI search trust.</h2>
+        <p>We tune your site, Google Business Profile, citations, reviews, and entity signals so customers and answer engines understand why you are the right choice.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="local-seo.html">Build Search Authority</a>
+          <a class="btn btn-ghost" href="case-studies.html">See Client Work</a>
+        </div>
+      </article>
+      <article data-panel>
+        <p class="stage-kicker">Marketing Systems</p>
+        <h2>Your CRM, ads, follow-up, and reviews working as one.</h2>
+        <p>We connect the parts that usually drift apart: website, lead capture, automations, text/email follow-up, reviews, reporting, and retargeting.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="marketing-systems.html">Explore the System</a>
+          <a class="btn btn-ghost" href="contact.html">Start an Audit</a>
+        </div>
+      </article>
+      <article data-panel>
+        <p class="stage-kicker">Audit · Build · Prove</p>
+        <h2>The work is measured in rankings, calls, reviews, and booked revenue.</h2>
+        <p>Every engagement starts with an Authority Audit, moves into a focused build, and gets reported through the numbers a local business owner can actually use.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="blog/client-zero-audit.html">Read Client Zero</a>
+          <a class="btn btn-ghost" href="#services">Scroll to Services</a>
+        </div>
+      </article>
+    </div>
+
+    <aside class="stage-proof" aria-label="Proof points">
+      <div><strong>100</strong><span>SEO client score</span></div>
+      <div><strong>24/7</strong><span>AI phone coverage</span></div>
+      <div><strong>90</strong><span>day build program</span></div>
+    </aside>
+
+    <div class="stage-controls" aria-label="Slide controls">
+      <button type="button" data-prev>Prev.</button>
+      <button type="button" data-next>Next</button>
+    </div>
+
+    <div class="stage-bottom">
+      <button type="button" data-sound>Sound Off</button>
+      <a href="#services">Scroll to Explore</a>
+      <a href="tel:+16178124881">Chat With Iris</a>
     </div>
   </section>
 
-  <div class="iris-band">
+  <div class="iris-band" id="services">
     <span class="tag">Live Demo</span>
     Don't take our word for it — call <strong>Iris</strong>, our AI voice agent, right now: <a href="tel:+16178124881">(617) 812-4881</a>
   </div>
@@ -244,5 +324,75 @@
     <p class="legal"><span>© 2026 Insightful Eye Marketing</span><span>Rhode Island · Boston · Cape Cod</span></p>
   </div>
 </footer>
+<script>
+  (() => {
+    const root = document.querySelector('.home-page');
+    if (!root) return;
+
+    const panels = Array.from(document.querySelectorAll('[data-panel]'));
+    const rail = Array.from(document.querySelectorAll('[data-slide]'));
+    const next = document.querySelector('[data-next]');
+    const prev = document.querySelector('[data-prev]');
+    const menu = document.getElementById('home-menu');
+    const menuToggle = document.querySelector('[data-menu-toggle]');
+    const menuClose = document.querySelector('[data-menu-close]');
+    const loader = document.querySelector('[data-loader]');
+    const loaderClose = document.querySelector('[data-loader-close]');
+    const loaderPercent = document.querySelector('[data-loader-percent]');
+    const sound = document.querySelector('[data-sound]');
+    let active = 0;
+
+    const setSlide = (index) => {
+      active = (index + panels.length) % panels.length;
+      panels.forEach((panel, itemIndex) => panel.classList.toggle('active', itemIndex === active));
+      rail.forEach((button, itemIndex) => {
+        button.classList.toggle('active', itemIndex === active);
+        button.setAttribute('aria-current', itemIndex === active ? 'true' : 'false');
+      });
+    };
+
+    rail.forEach((button, index) => button.addEventListener('click', () => setSlide(index)));
+    next?.addEventListener('click', () => setSlide(active + 1));
+    prev?.addEventListener('click', () => setSlide(active - 1));
+
+    const setMenu = (open) => {
+      menu?.classList.toggle('open', open);
+      menu?.setAttribute('aria-hidden', String(!open));
+      menuToggle?.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('menu-open', open);
+    };
+
+    menuToggle?.addEventListener('click', () => setMenu(!menu?.classList.contains('open')));
+    menuClose?.addEventListener('click', () => setMenu(false));
+    menu?.addEventListener('click', (event) => {
+      if (event.target === menu) setMenu(false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setMenu(false);
+      if (event.key === 'ArrowRight') setSlide(active + 1);
+      if (event.key === 'ArrowLeft') setSlide(active - 1);
+    });
+
+    sound?.addEventListener('click', () => {
+      const isOn = sound.textContent.includes('On');
+      sound.textContent = isOn ? 'Sound Off' : 'Sound On';
+    });
+
+    let percent = 0;
+    const timer = window.setInterval(() => {
+      percent = Math.min(100, percent + 10);
+      if (loaderPercent) loaderPercent.textContent = `${percent}%`;
+      if (percent === 100) {
+        window.clearInterval(timer);
+        window.setTimeout(() => loader?.classList.add('ready'), 180);
+        window.setTimeout(() => loader?.classList.add('hidden'), 900);
+      }
+    }, 55);
+
+    loaderClose?.addEventListener('click', () => loader?.classList.add('hidden'));
+    setSlide(0);
+  })();
+</script>
 </body>
 </html>
