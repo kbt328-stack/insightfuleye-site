@@ -310,6 +310,19 @@ details p a { color: var(--gold); }
   padding: 58px 28px; text-align: center; color: var(--muted);
 }
 .form-slot strong { font-family: var(--serif); color: var(--cream); font-size: 1.12rem; }
+.form-slot__intro { margin: 8px 0 1rem; }
+.form-slot__alt { margin-top: 1rem; }
+.ghl-form-embed {
+  width: 100%;
+  min-height: 1300px;
+  margin: 1rem 0 1.25rem;
+}
+.ghl-form-embed iframe {
+  width: 100%;
+  min-height: 1300px;
+  display: block;
+  background: transparent;
+}
 
 /* ---------- contact blocks ---------- */
 .contact-block { border-top: 1px solid var(--line); padding: 26px 4px; }
