@@ -20,7 +20,7 @@ Key facts:
 
 ## Company
 - [About](https://www.insightfuleye.com/about.html): Founder story — the photography studio that became an AI marketing agency.
-- [Case Studies](https://www.insightfuleye.com/case-studies.html): Client Zero (self-audit), 1 Prompt Changed My Life (founder-led AI education brand — Vercel static site with production mobile Lighthouse 100/100/100/100), Dog Gone Spoiled (Riverside RI dog groomer — website built from zero, now recommended by AI engines), Fisher's Fruit & Christmas Tree Farm (Brockport NY — 100/100 Lighthouse SEO build with analytics and A/B-tested B2B outreach), Custom Crafted CC (Year-1 build).
+- [Case Studies](https://www.insightfuleye.com/case-studies.html): Client Zero (self-audit), 1 Prompt Changed My Life (founder-led AI education brand — Vercel static site with robots.txt, sitemap.xml, and production mobile Lighthouse 100/100/100/100), Dog Gone Spoiled (Riverside RI dog groomer — website built from zero, now recommended by AI engines), Fisher's Fruit & Christmas Tree Farm (Brockport NY — 100/100 Lighthouse SEO build with analytics and A/B-tested B2B outreach), Custom Crafted CC (Year-1 build).
 - [Blog](https://www.insightfuleye.com/blog/): Field notes on local SEO and AI search, including the Client Zero series and practical AI visibility guidance.
 - [AI Search Needs Local Proof](https://www.insightfuleye.com/blog/ai-search-needs-local-proof.html): Explains that local AI visibility depends on crawlable service pages, geography, reviews, case studies, and entity consistency rather than prompt tricks or generic marketing claims.
 - [Contact / Authority Audit](https://www.insightfuleye.com/contact.html)
