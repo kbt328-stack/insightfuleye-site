@@ -25,6 +25,11 @@
   <link rel="icon" href="/assets/favicon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -91,7 +96,7 @@
   </nav>
 </header>
 
-<aside class="home-menu" id="home-menu" aria-hidden="true">
+<aside class="home-menu" id="home-menu" aria-hidden="true" inert>
   <div class="home-menu-panel" role="dialog" aria-modal="true" aria-label="Homepage menu">
     <div class="home-menu-top">
       <span>Explore</span>
@@ -374,6 +379,7 @@
     const setMenu = (open) => {
       menu?.classList.toggle('open', open);
       menu?.setAttribute('aria-hidden', String(!open));
+      if (menu) menu.inert = !open;
       menuToggle?.setAttribute('aria-expanded', String(open));
       document.body.classList.toggle('menu-open', open);
     };
