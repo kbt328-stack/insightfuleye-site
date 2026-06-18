@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 140" fill="none">
+  <defs>
+    <clipPath id="eyeclip"><path d="M18 70 C62 14 158 14 202 70 C158 126 62 126 18 70 Z"/></clipPath>
+    <radialGradient id="pupil" cx="50%" cy="50%" r="50%">
+      <stop offset="55%" stop-color="#040406"/><stop offset="100%" stop-color="#0c0c12"/>
+    </radialGradient>
+    <filter id="aiglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g clip-path="url(#eyeclip)"><circle cx="86" cy="70" r="46" fill="url(#pupil)"/></g>
+  <text x="86" y="73" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="47"
+        fill="#5cc0ff" text-anchor="middle" dominant-baseline="central" filter="url(#aiglow)">AI</text>
+  <path d="M18 70 C62 14 158 14 202 70 C158 126 62 126 18 70 Z" stroke="#ffffff" stroke-width="11"
+        stroke-linejoin="round"/>
+</svg>
