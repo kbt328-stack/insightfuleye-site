@@ -1084,3 +1084,7 @@ body.menu-open {
     opacity: .62;
   }
 }
+
+/* New raster brand logo (white eye + gold AI orb) — replaces inline SVG mark */
+.logo-img { height: 40px; width: auto; display: block; }
+@media (max-width: 600px){ .logo-img { height: 34px; } }
